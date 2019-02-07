@@ -1,0 +1,43 @@
+<mvc:View controllerName="shiv.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:l="sap.ui.commons.layout">
+	<Page title="Welcome to SAPUi5">
+		<content>
+			<f:SimpleForm title="Employee Form" editable="true" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="5"
+				emptySpanM="5">
+				<f:content>
+					<Label text="Employee Id" required="true"></Label>
+					<Select id="idSelEmpId" items="{/aEmployees}" change="onChangeEmpId">
+						<core:Item text="{empid}" key="{empid}"></core:Item>
+					</Select>
+					<Label text="Empployee Name" required="true"></Label>
+					<MultiComboBox id="idCbEmpName" items="{/aEmployees}" >
+						<core:Item text="{empname}" key="{empname}"></core:Item>
+					</MultiComboBox>
+					<Label text="Empployee Designation" required="true"></Label>
+					<Input id="idEmpDesig" value="{/empdesig}"></Input>
+					<Label text="Empployee Email" required="true"></Label>
+					<Input id="idEmpEmail" value="{/empemail}"></Input>
+					<Label text="Empployee PhoneNo." required="true"></Label>
+					<Input id="idEmpPhone" value="{/empphone}"></Input>
+					<Label text="Empployee Pincode" required="true"></Label>
+					<Input id="idEmpPin" value="{/emppin}"></Input>
+					<Label text="Configuration"/>
+						<Switch id="CrudFragSwitch1Id" state="false" customTextOn="Yes" customTextOff="No">
+							<layoutData>
+								<FlexItemData growFactor="1" />
+							</layoutData>
+						</Switch>
+				</f:content>
+			</f:SimpleForm>
+		</content>
+		<footer>
+			<Bar>
+				<contentRight>
+					<Button text="Create" type="Emphasized" press="onCreate"></Button>
+					<Button text="Submit" type="Emphasized" press="onSubmit"></Button>
+					<Button text="Close" type="Emphasized" press="onClose"></Button>
+				</contentRight>
+			</Bar>
+		</footer>
+	</Page>
+</mvc:View>

@@ -1,0 +1,25 @@
+{
+	"empid": "",
+	"empname": "",
+	"empdesig": "",
+	"empemail": "",
+	"empphone": "",
+	"emppin": "",
+
+	"aEmployees": [{
+		"empid": "1001", "empname":"Gourav"
+	}, {
+		"empid": "1002", "empname":"Jagtar"
+	}, {
+		"empid": "1003", "empname":"Koushik"
+	}, {
+		"empid": "1004", "empname":"Khaiwal"
+	}, {
+		"empid": "1005", "empname":"Manoj"
+	}, {
+		"empid": "1006", "empname":"Nikitha"
+	}, {
+		"empid": "1007", "empname":"Reetika"
+	}]
+
+}

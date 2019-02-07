@@ -1,0 +1,24 @@
+<mvc:View controllerName="shiv.controller.View2" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form">
+	<Page title="Second View" showNavButton="true" navButtonPress="onGoBack">
+		<content>
+			<f:SimpleForm title="Employee Form Preview" editable="false" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="5"
+				emptySpanM="5">
+				<f:content>
+					<Label text="Employee Id" required="true"></Label>
+					<Text id="idEmpId" text="{/empid}"></Text>
+					<Label text="Empployee Name" required="true"></Label>
+					<Text id="idEmpName" text="{/empname}"></Text>
+					<Label text="Empployee Designation" required="true"></Label>
+					<Text id="idEmpDesig" text="{/empdesig}"></Text>
+					<Label text="Empployee Email" required="true"></Label>
+					<Text id="idEmpEmail" text="{/empemail}"></Text>
+					<Label text="Empployee PhoneNo." required="true"></Label>
+					<Text id="idEmpPhone" text="{/empphone}"></Text>
+					<Label text="Empployee Pincode" required="true"></Label>
+					<Text id="idEmpPin" text="{/emppin}"></Text>
+				</f:content>
+			</f:SimpleForm>
+		</content>
+	</Page>
+</mvc:View>
